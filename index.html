@@ -32,9 +32,15 @@ a {
 a:hover {
   color: lightblue;
 }
+.space {
+	padding-left: 5vh;
+}
 @media only screen and (max-width: 1000px) {
   nav {
     text-align: center;
+  }
+  .space {
+  	padding: 0;
   }
 }
 @media only screen and (max-height: 600px) {
@@ -177,9 +183,9 @@ body {
 <body>
 <nav id="navbar">
   <ul>
-    <li><a href="#welcome-section">About</a></li>
-    <li><a href="#projects">Projects</a></li>
-    <li><a href="#contact">Contact</a></li>
+    <li><a href="#welcome-section" class="space">Home</a></li>
+    <li><a href="#projects" class="space">Projects</a></li>
+    <li><a href="#contact" class="space">Contact</a></li>
   </ul>
 </nav>
 <div id="welcome-section" style="text-align: center">
