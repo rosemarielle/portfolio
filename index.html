@@ -1,213 +1,227 @@
 <!DOCTYPE html>
 <html>
 <header>
-<style>
-* {
-  font-family: courier;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-nav {
-  position: fixed;
-  width: 100%;
-  background-color: #FFB6C1;
-  float: left;
-  clear: none;
-  height: auto;
-  display: inline-block;
-  text-align: right;
-}
-li {
-  list-style: none;
-  display: inline-block;
-  padding: 20px;
-}
-a {
-  text-decoration: none;
-  font-family: courier;
-  color: white;
-}
-a:hover {
-  color: lightblue;
-}
-.space {
-	padding-left: 1vw;
-}
-@media only screen and (max-width: 1000px) {
-  nav {
-    text-align: center;
-  }
-  .space {
-  	padding: 0;
-  }
-}
-@media only screen and (max-height: 600px) {
-  li {
-    padding: 1% 20px 1% 20px;
-  }
-  .flower_box, .flower, #pistil {
-  	display: none;
-  }
-  #welcome-section {
-  	padding: 10vh 0 50vh 0;
-  }
-}
-#welcome-section {
-  text-align: center;
-  color: white;
-  min-height: 100vh;
-  width: 100%;
-  background-color: #F8DE7E;
-  float: left;
-  clear: none;
-  vertical-align: middle;
-}
-h1 {
-  padding: 0 0 0 0;
-}
-#projects {
-  text-align: center;
-  color: white;
-  min-height: 70vh;
-  width: 100%;
-  background-color: #FFB6C1;
-  float: left;
-  clear: none;
-  vertical-align: middle;
-  padding: 50vh 0 50vh 0;
-}
-h2 {
-  color: white;
-}
-#contact {
-  text-align: center;
-  color: white;
-  min-height: 70vh;
-  width: 100%;
-  background-color: #F8DE7E;
-  float: left;
-  clear: none;
-  vertical-align: middle;
-  padding: 50vh 0 50vh 0;
-}
-@-moz-keyframes spin {
-  100% {
-    -moz-transform: rotate(360deg);
-  }
-}
-@-webkit-keyframes spin {
-  100% {
-    -webkit-transform: rotate(360deg);
-  }
-}
-@keyframes spin {
-  100% {
-    -webkit-transform: rotate(360deg);
-    transform: rotate(360deg);
-  }
-}
-body {
-  background-color: white;
-}
+	<head>
+		<title>Marielle Cunanan: Coming Soon</title>
+	</head>
 
-.flower {
-  position: relative;
-  width: 9em;
-  height: 9em;
-  border-radius: 50%;
-  padding: 0;
-  -webkit-animation: spin 4s linear infinite;
-  -moz-animation: spin 4s linear infinite;
-  animation: spin 4s linear infinite;
-}
-.flower > * {
-  display: block;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  margin: -3em;
-  width: 6em;
-  height: 6em;
-  border-radius: 50%;
-}
-.flower > *:nth-of-type(1) {
-  transform: rotate(0deg) translate(4.5em) rotate(0deg);
-}
-.flower > *:nth-of-type(2) {
-  transform: rotate(72deg) translate(4.5em) rotate(-72deg);
-}
-.flower > *:nth-of-type(3) {
-  transform: rotate(144deg) translate(4.5em) rotate(-144deg);
-}
-.flower > *:nth-of-type(4) {
-  transform: rotate(216deg) translate(4.5em) rotate(-216deg);
-}
-.flower > *:nth-of-type(5) {
-  transform: rotate(288deg) translate(4.5em) rotate(-288deg);
-}
-.flower > *:nth-of-type(1) {
-  background-color: #FFB6C1;
-}
-.flower > *:nth-of-type(2) {
-  background-color: #FFB6C2;
-}
-.flower > *:nth-of-type(3) {
-  background-color: #FFB6C3;
-}
-.flower > *:nth-of-type(4) {
-  background-color: #FFB6C4;
-}
-.flower > *:nth-of-type(5) {
-  background-color: #FFB6C5;
-}
+	<style>
+		* {
+			font-family: courier;
+			margin: 0;
+  			padding: 0;
+  			box-sizing: border-box;
+		}
 
-.flower_box {
-  margin: 35vh 0 0 0;
-}
+		nav {
+  			position: fixed;
+  			width: 100%;
+  			background-color: #FFB6C1;
+  			float: left;
+  			clear: none;
+  			height: auto;
+  			display: inline-block;
+  			text-align: right;
+		}
+		li {
+  			list-style: none;
+  			display: inline-block;
+  			padding: 20px;
+		}
+		a {
+  			text-decoration: none;
+  			font-family: courier;
+  			color: white;
+		}
+		a:hover {
+  			color: lightblue;
+		}
+		.space {
+			padding-left: 1vw;
+		}
 
-#pistil {
-  position: relative;
-  width: 6em;
-  height: 6em;
-  background-color: #FFFFFF;
-  border-radius: 50%;
-  top: -115px;
-  left: 25px;
-}
+		body {
+  			background-color: white;
+		}
+		h1 {
+  			padding: 0 0 0 0;
+		}
+		h2 {
+  			color: white;
+		}
 
+		#welcome-section {
+  			text-align: center;
+  			color: white;
+  			min-height: 100vh;
+  			width: 100%;
+  			background-color: #F8DE7E;
+  			float: left;
+  			clear: none;
+  			vertical-align: middle;
+		}
 
-</style>
+		#projects {
+  			text-align: center;
+  			color: white;
+  			min-height: 70vh;
+  			width: 100%;
+  			background-color: #FFB6C1;
+  			float: left;
+  			clear: none;
+  			vertical-align: middle;
+  			padding: 50vh 0 50vh 0;
+		}
+
+		#contact {
+  			text-align: center;
+  			color: white;
+  			min-height: 70vh;
+  			width: 100%;
+  			background-color: #F8DE7E;
+  			float: left;
+  			clear: none;
+  			vertical-align: middle;
+  			padding: 50vh 0 50vh 0;
+		}
+
+		@-moz-keyframes spin {
+  			100% {
+    			-moz-transform: rotate(360deg);
+  			}
+		}
+		@-webkit-keyframes spin {
+  			100% {
+    			-webkit-transform: rotate(360deg);
+  			}
+		}
+		@keyframes spin {
+  			100% {
+    			-webkit-transform: rotate(360deg);
+    		transform: rotate(360deg);
+  			}
+		}
+
+		.flower {
+  			position: relative;
+  			width: 9em;
+  			height: 9em;
+  			border-radius: 50%;
+  			padding: 0;
+  			-webkit-animation: spin 4s linear infinite;
+  			-moz-animation: spin 4s linear infinite;
+  			animation: spin 4s linear infinite;
+		}
+		.flower > * {
+  			display: block;
+  			position: absolute;
+  			top: 50%;
+  			left: 50%;
+  			margin: -3em;
+  			width: 6em;
+  			height: 6em;
+  			border-radius: 50%;
+		}
+		.flower > *:nth-of-type(1) {
+		  	transform: rotate(0deg) translate(4.5em) rotate(0deg);
+		}
+		.flower > *:nth-of-type(2) {
+		  	transform: rotate(72deg) translate(4.5em) rotate(-72deg);
+		}
+		.flower > *:nth-of-type(3) {
+  			transform: rotate(144deg) translate(4.5em) rotate(-144deg);
+		}
+		.flower > *:nth-of-type(4) {
+		  	transform: rotate(216deg) translate(4.5em) rotate(-216deg);
+		}
+		.flower > *:nth-of-type(5) {
+		  	transform: rotate(288deg) translate(4.5em) rotate(-288deg);
+		}
+		.flower > *:nth-of-type(1) {
+		  	background-color: #FFB6C1;
+		}
+		.flower > *:nth-of-type(2) {
+		  	background-color: #FFB6C2;
+		}
+		.flower > *:nth-of-type(3) {
+		  	background-color: #FFB6C3;
+		}
+		.flower > *:nth-of-type(4) {
+		  	background-color: #FFB6C4;
+		}
+		.flower > *:nth-of-type(5) {
+		  	background-color: #FFB6C5;
+		}
+
+		.flower_box {
+ 			margin: 35vh 0 0 0;
+		}
+
+		#pistil {
+  			position: relative;
+  			width: 6em;
+  			height: 6em;
+  			background-color: #FFFFFF;
+  			border-radius: 50%;
+  			top: -115px;
+  			left: 25px;
+		}
+
+		@media only screen and (max-width: 1000px) {
+  			nav {
+  				text-align: center;
+  			}
+  			.space {
+  				padding: 0;
+  			}
+		}
+		@media only screen and (max-height: 600px) {
+  			li {
+    			padding: 1% 20px 1% 20px;
+  			}
+  			.flower_box, .flower, #pistil {
+  				display: none;
+  			}
+  			#welcome-section {
+  				padding: 10vh 0 50vh 0;
+  			}
+		}
+	</style>
 </header>
+
 <body>
-<nav id="navbar">
-  <ul>
-    <li><a href="#welcome-section" class="space">Home</a></li>
-    <li><a href="#projects" class="space">Projects</a></li>
-    <li><a href="#contact" class="space">Contact</a></li>
-  </ul>
-</nav>
-<div id="welcome-section" style="text-align: center">
-	<div class="flower_box" style="display: inline-block;">
-	<div class="flower">
-			<div class="petals"></div>
-			<div class="petals"></div>
-			<div class="petals"></div>
-			<div class="petals"></div>
-			<div class="petals"></div>
+	<nav id="navbar">
+  		<ul>
+    		<li><a href="#welcome-section" class="space">Home</a></li>
+    		<li><a href="#projects" class="space">Projects</a></li>
+    		<li><a href="#contact" class="space">Contact</a></li>
+  		</ul>
+	</nav>
+
+	<div id="welcome-section" style="text-align: center">
+		<div class="flower_box" style="display: inline-block;">
+			<div class="flower">
+				<div class="petals"></div>
+				<div class="petals"></div>
+				<div class="petals"></div>
+				<div class="petals"></div>
+				<div class="petals"></div>
+			</div>
+			<div id="pistil"></div>
 		</div>
-		<div id="pistil"></div>
+
+  		<h1>m a r i e l l e</h1>
+  		<p>an aspiring software engineer</p>
 	</div>
-  <h1>m a r i e l l e</h1>
-  <p>an aspiring software engineer</p>
-</div>
-<div id="projects">
-  <h2 class="project-tile">No projects yet! Future projects will be located at these pages: </h2>
-  <h2><a href="projects.html">Code</a></h2>
-  <h2><a href="art.html">Art</a></h2>
-</div>
-<div id="contact">
-  <h2>Check out my <a href="https://github.com/rosemarielle" id="profile-link" target="_blank">github</a> and <a href="https://www.linkedin.com/in/mariellerose" id="profile-link" target="_blank">LinkedIn</a> profiles!</h2>
-</div>
+
+	<div id="projects">
+  		<h2 class="project-tile">No projects yet! Future projects will be located at these pages: </h2>
+  		<h2><a href="projects.html">Code</a></h2>
+  		<h2><a href="art.html">Art</a></h2>
+	</div>
+
+	<div id="contact">
+	  	<h2>Check out my <a href="https://github.com/rosemarielle" id="profile-link" target="_blank">github</a> and <a href="https://www.linkedin.com/in/mariellerose" id="profile-link" target="_blank">LinkedIn</a> profiles!</h2>
+	</div>
 </body>
 </html>
