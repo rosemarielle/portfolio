@@ -2,8 +2,9 @@
 <html>
 <header>
 	<head>
-		<title>Marielle Cunanan: Coming Soon</title>
+		<title>Marielle Cunanan</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	</head>
 <script>
 $(document).ready(function(){
   // Add smooth scrolling to all links
@@ -30,8 +31,6 @@ $(document).ready(function(){
   });
 });
 </script>
-	</head>
-
 	<style>
 		* {
 			font-family: courier;
@@ -43,7 +42,7 @@ $(document).ready(function(){
 		nav {
   			position: fixed;
   			width: 100%;
-  			background-color: #FFB6C1;
+  			background-color: #421313;
   			float: left;
   			clear: none;
   			height: auto;
@@ -58,14 +57,18 @@ $(document).ready(function(){
 		a {
   			text-decoration: none;
   			font-family: courier;
-  			color: white;
+  			color: #FCF1E2;
 		}
 		a:hover {
-  			color: #F8DE7E;
+  			color: #0b3610;
 		}
 
+    a.pink {
+        color: #412313;
+    }
+
     a.pink:hover {
-        color: #FFB6C1;
+        color: #0b3610;
     }
 
 		.space {
@@ -73,21 +76,26 @@ $(document).ready(function(){
 		}
 
 		body {
-  			background-color: white;
+  			background-color: #412313;
 		}
 		h1 {
   			padding: 0 0 0 0;
 		}
 		h2 {
-  			color: white;
+  			color: #FCF1E2;
 		}
+
+    .logo {
+      padding-top: 30vh;
+      max-height: 50vh;
+    }
 
 		#welcome-section {
   			text-align: center;
-  			color: white;
+  			color: #412313;
   			min-height: 100vh;
   			width: 100%;
-  			background-color: #F8DE7E;
+  			background-color: #FCF1E2;
   			float: left;
   			clear: none;
   			vertical-align: middle;
@@ -95,108 +103,47 @@ $(document).ready(function(){
 
 		#projects {
   			text-align: center;
-  			color: white;
+  			color: #FCF1E2;
   			min-height: 70vh;
   			width: 100%;
-  			background-color: #FFB6C1;
+  			background-color: #421313;
   			float: left;
   			clear: none;
   			vertical-align: middle;
-  			padding: 50vh 0 50vh 0;
+  			padding: 16vh 0 20vh 0;
 		}
+
+    .project-divider {
+        display: flex;
+        justify-content: space-around;
+        padding-top: 16vh;
+    }
+
+    .code-section {
+      float: left;
+      width: 40%;
+    }
+
+    .art-section {
+      float: right;
+      width: 40%;
+    }
+
+    .column {
+      max-height: 40vh;
+      padding-bottom: 5vh;
+    }
 
 		#contact {
   			text-align: center;
-  			color: white;
+  			color: #412313;
   			min-height: 70vh;
   			width: 100%;
-  			background-color: #F8DE7E;
+  			background-color: #FCF1E2;
   			float: left;
   			clear: none;
   			vertical-align: middle;
   			padding: 50vh 0 50vh 0;
-		}
-
-		@-moz-keyframes spin {
-  			100% {
-    			-moz-transform: rotate(360deg);
-  			}
-		}
-		@-webkit-keyframes spin {
-  			100% {
-    			-webkit-transform: rotate(360deg);
-  			}
-		}
-		@keyframes spin {
-  			100% {
-    			-webkit-transform: rotate(360deg);
-    		transform: rotate(360deg);
-  			}
-		}
-
-		.flower {
-  			position: relative;
-  			width: 9em;
-  			height: 9em;
-  			border-radius: 50%;
-  			padding: 0;
-  			-webkit-animation: spin 4s linear infinite;
-  			-moz-animation: spin 4s linear infinite;
-  			animation: spin 4s linear infinite;
-		}
-		.flower > * {
-  			display: block;
-  			position: absolute;
-  			top: 50%;
-  			left: 50%;
-  			margin: -3em;
-  			width: 6em;
-  			height: 6em;
-  			border-radius: 50%;
-		}
-		.flower > *:nth-of-type(1) {
-		  	transform: rotate(0deg) translate(4.5em) rotate(0deg);
-		}
-		.flower > *:nth-of-type(2) {
-		  	transform: rotate(72deg) translate(4.5em) rotate(-72deg);
-		}
-		.flower > *:nth-of-type(3) {
-  			transform: rotate(144deg) translate(4.5em) rotate(-144deg);
-		}
-		.flower > *:nth-of-type(4) {
-		  	transform: rotate(216deg) translate(4.5em) rotate(-216deg);
-		}
-		.flower > *:nth-of-type(5) {
-		  	transform: rotate(288deg) translate(4.5em) rotate(-288deg);
-		}
-		.flower > *:nth-of-type(1) {
-		  	background-color: #FFB6C1;
-		}
-		.flower > *:nth-of-type(2) {
-		  	background-color: #FFB6C2;
-		}
-		.flower > *:nth-of-type(3) {
-		  	background-color: #FFB6C3;
-		}
-		.flower > *:nth-of-type(4) {
-		  	background-color: #FFB6C4;
-		}
-		.flower > *:nth-of-type(5) {
-		  	background-color: #FFB6C5;
-		}
-
-		.flower_box {
- 			margin: 35vh 0 0 0;
-		}
-
-		#pistil {
-  			position: relative;
-  			width: 6em;
-  			height: 6em;
-  			background-color: #FFFFFF;
-  			border-radius: 50%;
-  			top: -115px;
-  			left: 25px;
 		}
 
 		@media only screen and (max-width: 1000px) {
@@ -211,12 +158,15 @@ $(document).ready(function(){
   			li {
     			padding: 1% 20px 1% 20px;
   			}
-  			.flower_box, .flower, #pistil {
+  			.logo {
   				display: none;
   			}
   			#welcome-section {
   				padding: 10vh 0 50vh 0;
   			}
+        .title {
+          padding-top: 35vh;
+        }
 		}
 	</style>
 </header>
@@ -231,29 +181,33 @@ $(document).ready(function(){
 	</nav>
 
 	<div id="welcome-section" style="text-align: center">
-		<div class="flower_box" style="display: inline-block;">
-			<div class="flower">
-				<div class="petals"></div>
-				<div class="petals"></div>
-				<div class="petals"></div>
-				<div class="petals"></div>
-				<div class="petals"></div>
-			</div>
-			<div id="pistil"></div>
-		</div>
 
-  		<h1>m a r i e l l e</h1>
-  		<p>an aspiring software engineer</p>
+      <img src="photos/logo.png" class="logo">
+
+  		<h1 class="title">marielle cunanan</h1>
+  		<p>student + hobbyist game developer</p>
 	</div>
 
 	<div id="projects">
-  		<h2 class="project-tile">No projects yet! Future projects will be located at these pages: </h2>
-  		<h2><a href="projects.html">Code</a></h2>
-  		<h2><a href="art.html">Art</a></h2>
+  		<h2>Check out my projects! </h2>
+      <div class="project-divider">
+          <div class="code-section">
+            <a href="projects.html">
+              <img src="photos/twenty-one.png" class="column">
+              <h2>Code</h2>
+            </a>
+          </div>
+  		    <div class="art-section">
+            <a href="art.html">
+              <img src="photos/girl.png" class="column">
+              <h2>Art</h2>
+            </a>
+          </div>
+      </div>
 	</div>
 
 	<div id="contact">
-	  	<h2>Check out my <a href="https://github.com/rosemarielle" id="profile-link" target="_blank" class="pink">github</a> and <a href="https://www.linkedin.com/in/mariellerose" id="profile-link" target="_blank" class="pink">LinkedIn</a> profiles!</h2>
+	  	<h2 style="color: #412313;">Check out my <a href="https://github.com/rosemarielle" id="profile-link" target="_blank" class="pink">github</a> and <a href="https://www.linkedin.com/in/mariellerose" id="profile-link" target="_blank" class="pink">LinkedIn</a> profiles!</h2>
 	</div>
 </body>
 </html>

@@ -1,11 +1,163 @@
 <!DOCTYPE html>
 <html>
-<head>
-</head>
-<body>
-	<p>Test! This page is to check how links would work in the GitHub repo.</p>
-	<p><a href="index.html">Click here to go back</a></p>
-</body>
-<html>
+<header>
+	<head>
+		<title>Marielle Cunanan: Projects</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
 
-<!-- Page containing all my projects, with tabs for complete vs in progress -->
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+</script>
+	</head>
+
+	<style>
+		* {
+			font-family: courier;
+			margin: 0;
+  			padding: 0;
+  			box-sizing: border-box;
+		}
+
+		nav {
+  			position: fixed;
+  			width: 100%;
+  			background-color: #FFB6C1;
+  			float: left;
+  			clear: none;
+  			height: auto;
+  			display: inline-block;
+  			text-align: right;
+		}
+		li {
+  			list-style: none;
+  			display: inline-block;
+  			padding: 20px;
+		}
+		a {
+  			text-decoration: none;
+  			font-family: courier;
+  			color: white;
+		}
+		a:hover {
+  			color: #F8DE7E;
+		}
+
+    a.pink:hover {
+        color: #FFB6C1;
+    }
+
+		.space {
+			padding-left: 1vw;
+		}
+
+		body {
+  			background-color: white;
+		}
+		h1 {
+  			padding: 0 0 0 0;
+		}
+		h2 {
+  			color: white;
+		}
+
+		#welcome-section {
+  			text-align: center;
+  			color: white;
+  			min-height: 100vh;
+  			width: 100%;
+  			background-color: #F8DE7E;
+  			float: left;
+  			clear: none;
+  			vertical-align: middle;
+		}
+
+		#portfolios {
+  			text-align: center;
+  			color: white;
+  			min-height: 70vh;
+  			width: 100%;
+  			background-color: #FFB6C1;
+  			float: left;
+  			clear: none;
+  			vertical-align: middle;
+  			padding: 50vh 0 50vh 0;
+		}
+
+		#kwk {
+  			text-align: center;
+  			color: white;
+  			min-height: 70vh;
+  			width: 100%;
+  			background-color: #F8DE7E;
+  			float: left;
+  			clear: none;
+  			vertical-align: middle;
+  			padding: 50vh 0 50vh 0;
+		}
+
+		@media only screen and (max-width: 1000px) {
+  			nav {
+  				text-align: center;
+  			}
+  			.space {
+  				padding: 0;
+  			}
+		}
+		@media only screen and (max-height: 600px) {
+  			li {
+    			padding: 1% 20px 1% 20px;
+  			}
+		}
+	</style>
+</header>
+
+<body>
+	<nav id="navbar">
+  		<ul>
+    		<li><a href="index.html" class="space">< Back</a></li>
+  		</ul>
+	</nav>
+
+	<div id="kwk">
+	  	<h2>Kode With Klossy 2019 Projects</h2>
+	  	<p>Kode With Klossy is a two-week summer program for young women ages 13-18, allowing them to gain useful knowledge about coding to create real-life applications.</p>
+	  	<ul>
+	  		<a class="pink" href="https://rosemarielle.github.io/photo-gallery"><li>Photo Gallery</li></a>
+	  		<p>By creating a photo gallery, I was able to demonstrate my understanding of flexbox and how to utilize it to make a responsive webpage.</p>
+
+	  		<a class="pink" href="https://rosemarielle.github.io/show-generator"><li>Random Generator</li></a>
+	  		<p>To understand how to apply basic JavaScript concepts to a webpage, I created a random generator that the user can interact with.</p>
+	  	</ul>
+	</div>
+
+	<div id="portfolios">
+		<h2>Portfolio Pages</h2>
+	  	<ul>
+	  		<a href="#"><li>Kaitlyn Francisco</li></a>
+	  		<p>Simple art-gallery inspired webpage for Kaitlyn to showcase her art.</p>
+	  	</ul>
+	</div>
+</body>
+</html>
