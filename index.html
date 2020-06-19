@@ -147,8 +147,17 @@ $(document).ready(function(){
   			float: left;
   			clear: none;
   			vertical-align: middle;
-  			padding: 50vh 0 50vh 0;
+  			padding: 30vh 0 30vh 0;
 		}
+
+    #social {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+    .social {
+      max-width: 25vh;
+    }
 
 		@media only screen and (max-width: 1000px) {
   			nav {
@@ -224,7 +233,13 @@ $(document).ready(function(){
 	</div>
 
 	<div id="contact">
-	  	<h2 style="color: #412313;">Check out my <a href="https://github.com/rosemarielle" id="profile-link" target="_blank" class="pink">github</a> and <a href="https://www.linkedin.com/in/mariellerose" id="profile-link" target="_blank" class="pink">LinkedIn</a> profiles!</h2>
+	  	<h2 style="color: #412313;">Contact me using any of these platforms!</h2>
+      <br><br>
+      <div id="social">
+        <a href="https://linkedin.com/in/mariellerose"><img src="photos/linkedin.png" class="social"></a>
+        <a href="https://instagram.com/roseforests"><img src="photos/instagram.png" class="social"></a>
+        <a href="https://twitter.com/rosesforest"><img src="photos/twitter.png" class="social"></a>
+      </div>
 	</div>
 </body>
 </html>
