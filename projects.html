@@ -43,7 +43,7 @@ $(document).ready(function(){
 		nav {
   			position: fixed;
   			width: 100%;
-  			background-color: #FFB6C1;
+  			background-color: #412313;
   			float: left;
   			clear: none;
   			height: auto;
@@ -58,15 +58,16 @@ $(document).ready(function(){
 		a {
   			text-decoration: none;
   			font-family: courier;
-  			color: white;
-		}
-		a:hover {
-  			color: #F8DE7E;
+  			color: #412313;
 		}
 
-    a.pink:hover {
-        color: #FFB6C1;
+    a.pink {
+      color: #FCF1E2;
     }
+
+		a:hover {
+  			color: #0b3610;
+		}
 
 		.space {
 			padding-left: 1vw;
@@ -79,43 +80,59 @@ $(document).ready(function(){
   			padding: 0 0 0 0;
 		}
 		h2 {
-  			color: white;
+  			color: #412313;
 		}
-
-		#welcome-section {
-  			text-align: center;
-  			color: white;
-  			min-height: 100vh;
-  			width: 100%;
-  			background-color: #F8DE7E;
-  			float: left;
-  			clear: none;
-  			vertical-align: middle;
-		}
+    h2.pink {
+        color: #FCF1E2;
+    }
+    p {
+      padding: 1vw 5vw 1vw 5vw;
+    }
 
 		#portfolios {
   			text-align: center;
-  			color: white;
+  			color: #412313;
   			min-height: 70vh;
   			width: 100%;
-  			background-color: #FFB6C1;
+  			background-color: #FCF1E2;
   			float: left;
   			clear: none;
   			vertical-align: middle;
   			padding: 50vh 0 50vh 0;
+        max-height: 110vh;
 		}
 
 		#kwk {
   			text-align: center;
-  			color: white;
+  			color: #FCF1E2;
   			min-height: 70vh;
   			width: 100%;
-  			background-color: #F8DE7E;
+  			background-color: #412313;
   			float: left;
   			clear: none;
   			vertical-align: middle;
   			padding: 50vh 0 50vh 0;
 		}
+
+    #games {
+        text-align: center;
+        color: #412313;
+        min-height: 70vh;
+        width: 100%;
+        background-color: #FCF1E2;
+        float: left;
+        clear: none;
+        vertical-align: middle;
+        padding: 30vh 0 30vh 0;
+    }
+
+    #game-container {
+      display: flex;
+      justify-content: center;
+      vertical-align: middle;
+      flex-direction: column;
+      align-items: center;
+    }
 
 		@media only screen and (max-width: 1000px) {
   			nav {
@@ -136,26 +153,38 @@ $(document).ready(function(){
 <body>
 	<nav id="navbar">
   		<ul>
-    		<li><a href="index.html" class="space">< Back</a></li>
+    		<li><a href="index.html" class="space, pink">< Back</a></li>
   		</ul>
 	</nav>
+  <div id="games">
+    <h2>Games</h2>
+    <br>
+    <div id="game-container">
+    <iframe frameborder="0" src="https://itch.io/embed/674262?linkback=true&amp;bg_color=412313&amp;fg_color=FCF1E2&amp;link_color=FCF1E2&amp;border_color=FCF1E2" width="45%"><a href="https://roseforests.itch.io/flippity-frog">Flippity Frog by rose</a></iframe>
+    <br>
+    <iframe frameborder="0" src="https://itch.io/embed/668056?linkback=true&amp;bg_color=412313&amp;fg_color=FCF1E2&amp;link_color=FCF1E2&amp;border_color=FCF1E2" width="45%"><a href="https://roseforests.itch.io/twenty-one">twenty-one by rose</a></iframe>
+    </div>
+  </div>
 
 	<div id="kwk">
-	  	<h2>Kode With Klossy 2019 Projects</h2>
+	  	<h2 class="pink">Kode With Klossy 2019 Projects</h2>
+      <br>
 	  	<p>Kode With Klossy is a two-week summer program for young women ages 13-18, allowing them to gain useful knowledge about coding to create real-life applications.</p>
+      <br>
 	  	<ul>
-	  		<a class="pink" href="https://rosemarielle.github.io/photo-gallery"><li>Photo Gallery</li></a>
+	  		<a class="pink" href="https://rosemarielle.github.io/photo-gallery"><li><h3>Photo Gallery</h3></li></a>
 	  		<p>By creating a photo gallery, I was able to demonstrate my understanding of flexbox and how to utilize it to make a responsive webpage.</p>
 
-	  		<a class="pink" href="https://rosemarielle.github.io/show-generator"><li>Random Generator</li></a>
+	  		<a class="pink" href="https://rosemarielle.github.io/show-generator"><li><h3>Random Generator</h3></li></a>
 	  		<p>To understand how to apply basic JavaScript concepts to a webpage, I created a random generator that the user can interact with.</p>
 	  	</ul>
 	</div>
 
 	<div id="portfolios">
 		<h2>Portfolio Pages</h2>
+    <br>
 	  	<ul>
-	  		<a href="#"><li>Kaitlyn Francisco</li></a>
+	  		<a href="#"><li><h3>Kaitlyn Francisco</h3></li></a>
 	  		<p>Simple art-gallery inspired webpage for Kaitlyn to showcase her art.</p>
 	  	</ul>
 	</div>
